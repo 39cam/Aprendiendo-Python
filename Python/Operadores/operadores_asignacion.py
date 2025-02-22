@@ -32,3 +32,17 @@ print(f"\n\nEl valor de la variable x es: {x}\nEl valor de y es: {y}\nEl valor d
 a = b = c = 10
 
 print(f"\n\nEl valor de la variable a es: {a}\nEl valor de b es: {b}\nEl valor de c es: {c}")
+
+# -------------------------------------------------- Intercambio de valores de una variable sin utilizar variables temporales
+
+x, y = 5,10
+print(f"\n\nValores iniciales x: {x}, y: {y}")
+# Aplicando el concepto de asignación multiple, intercambiamos valores
+
+x, y = y,x
+print(f"Valores cambiados: x ahora con valor y: {x}, y ahora con valor x: {y}")
+
+
+# Recibir multiples valores de la entrada del usuario
+nombre, apellido = input("\n\nIngresa tu nombre y apellido separados por coma: ").split(",") # Sin este split me generaría un error grande, no se separarían las variables
+print(f"El nombre es: {nombre.strip()} y el apellido es: {apellido.strip()}")
