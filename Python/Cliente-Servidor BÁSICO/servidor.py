@@ -1,7 +1,5 @@
 import socket
 
-# Andrés Camilo Ocampo Castillo - 20222578098
-
 # Dirección IP del servidor (la que voy a definir en el servidor)
 HOST = '192.168.1.1' # La ip debe concordar con la del cliente hasta el apartado de red, es decir en este caso los 3 primeros valores, cambia el valor final
 
@@ -24,5 +22,3 @@ while True:
     conn.sendall("Mensaje recibido".encode()) # Se envía el mensaje codificado al cliente para confirmar la conexión
 
 conn.close() # Se cierra la conexión
-
-# Andrés Camilo Ocampo Castillo - 20222578098
